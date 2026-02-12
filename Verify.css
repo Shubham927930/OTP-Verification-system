@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #064E3B;
+}
+
+.btn{
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-box {
+  background: #fff;
+  width: 300px;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.otp-box {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.otp-box input {
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.otp-box input:focus {
+  outline: none;
+  border-color: #4f46e5;
+}
+
+.msg {
+  margin-top: 10px;
+  font-size: 14px;
+}

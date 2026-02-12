@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification System</title>
+    <link rel="stylesheet" href="./Verify.css">
+</head>
+<body>
+    <button class="btn" onclick="handleGetOTP()">Get OTP</button>
+    <div class="modal" id="modal">
+        <div class="modal-box">
+            <span class="close" onclick="closeModal()">×</span>
+
+            <h3>Enter OTP</h3>
+            <p>Please enter the 4-digit OTP</p>
+
+            <div class="otp-box">
+                <input maxlength="1">
+                <input maxlength="1">
+                <input maxlength="1">
+                <input maxlength="1">
+            </div>
+
+            <button class="btn" onclick="verifyOTP()">Verify OTP</button>
+            <p class="msg" id="msg"></p>
+        </div>
+    </div>
+
+    <script src="./Verify.js"></script>
+</body>
+</html>
